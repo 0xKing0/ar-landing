@@ -1,4 +1,4 @@
-import { Users, Calendar, MessageSquare } from 'lucide-react';
+import { Users, Calendar, MessageSquare, Apple, Smartphone } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -35,25 +35,27 @@ export function Hero() {
             The Ultimate Airsoft Platform
           </span>
         </div>
-        
+
         <h1 className="mb-6 max-w-3xl mx-auto">
           <span className="block text-white">DOMINATE</span>
           <span className="block text-military-green">THE FIELD</span>
         </h1>
-        
+
         <p className="text-gray-300 max-w-xl mb-10 mx-auto">
           Build your squad, organize epic events, trade gear, and connect with the airsoft community. Everything you need to elevate your tactical game.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mb-20 justify-center">
-          <button className="px-8 py-3.5 bg-military-green hover:bg-military-green-light text-black transition-all uppercase tracking-wider text-sm inline-flex items-center justify-center gap-2 group">
-            Join the Mission
-            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
+        <div className="flex flex-col sm:flex-row gap-4 mb-20 justify-center items-center">
+          <button className="group relative flex items-center gap-3 px-6 py-2 bg-military-green border-2 border-military-green hover:bg-military-green-light text-black transition-all w-full sm:w-auto overflow-hidden">
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <Apple size={24} className="relative z-10" />
+            <div className="text-sm font-bold uppercase tracking-wide relative z-10">Download on iOS</div>
           </button>
-          <button className="px-8 py-3.5 border-2 border-gray-600 hover:border-military-green hover:bg-white/5 transition-all uppercase tracking-wider text-sm">
-            Watch Demo
+
+          <button className="group relative flex items-center gap-3 px-6 py-2 bg-transparent border-2 border-military-green hover:bg-military-green/5 text-military-green transition-all w-full sm:w-auto overflow-hidden">
+            <div className="absolute inset-0 bg-military-green/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <Smartphone size={24} className="relative z-10" />
+            <div className="text-sm font-bold uppercase tracking-wide relative z-10 text-white">Download on Android</div>
           </button>
         </div>
 

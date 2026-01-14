@@ -11,27 +11,30 @@ export function CTA() {
         <div className="inline-block px-4 py-2 bg-military-green/20 border border-military-green mb-6 uppercase tracking-widest text-sm">
           Ready to Deploy?
         </div>
-        
+
         <h2 className="mb-6">Join the Tactical Revolution</h2>
-        
+
         <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
-          Download Milsy today and experience the ultimate airsoft command center. 
+          Download Milsy today and experience the ultimate airsoft command center.
           Available on iOS and Android.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <button className="flex items-center gap-3 px-8 py-4 bg-black border-2 border-white/30 hover:border-military-green hover:bg-white/5 transition-colors w-full sm:w-auto justify-center">
-            <Apple size={24} />
-            <div className="text-left">
-              <div className="text-xs text-gray-400">Download on the</div>
-              <div className="text-lg">App Store</div>
+          <button className="group relative flex items-center gap-4 px-8 py-4 bg-military-green hover:bg-military-green-light text-black transition-all w-full sm:w-auto overflow-hidden">
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <Apple size={28} className="relative z-10" />
+            <div className="text-left relative z-10">
+              <div className="text-[10px] uppercase tracking-widest opacity-80 font-bold">Download on the</div>
+              <div className="text-xl font-orbitron font-bold uppercase tracking-tight leading-none">App Store</div>
             </div>
           </button>
-          <button className="flex items-center gap-3 px-8 py-4 bg-black border-2 border-white/30 hover:border-military-green hover:bg-white/5 transition-colors w-full sm:w-auto justify-center">
-            <Smartphone size={24} />
-            <div className="text-left">
-              <div className="text-xs text-gray-400">Get it on</div>
-              <div className="text-lg">Google Play</div>
+
+          <button className="group relative flex items-center gap-4 px-8 py-4 bg-transparent border-2 border-military-green hover:bg-military-green/5 text-military-green transition-all w-full sm:w-auto overflow-hidden">
+            <div className="absolute inset-0 bg-military-green/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <Smartphone size={28} className="relative z-10" />
+            <div className="text-left relative z-10 text-white">
+              <div className="text-[10px] uppercase tracking-widest opacity-60 font-bold">Get it on</div>
+              <div className="text-xl font-orbitron font-bold uppercase tracking-tight leading-none">Google Play</div>
             </div>
           </button>
         </div>

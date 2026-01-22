@@ -33,7 +33,7 @@ export function Footer() {
             <h4 className="mb-4 uppercase tracking-wider text-sm">Company</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li><a href="privacy-policy" className="hover:text-military-green transition-colors">About Us</a></li>
-              <li><a href="#contact" className="hover:text-military-green transition-colors">Contact</a></li>
+              <li><a href="/contact" className="hover:text-military-green transition-colors">Contact</a></li>
             </ul>
           </div>
 

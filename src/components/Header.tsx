@@ -40,7 +40,7 @@ export function Header() {
               Testimonials
             </a>
             <a
-              href="/#contact"
+              href="/contact"
               className="text-sm uppercase tracking-wider text-gray-300 hover:text-military-green transition-colors"
             >
               Contact

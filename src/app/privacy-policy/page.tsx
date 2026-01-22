@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 
 export default function PrivacyPolicy() {
     return (
-        <div className="min-h-screen bg-[#0a110f] text-white selection:bg-military-green selection:text-black font-rajdhani text-lg">
+        <div className="min-h-screen bg-dark-main text-white selection:bg-military-green selection:text-black font-rajdhani text-lg">
             <Header />
 
             <main className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
